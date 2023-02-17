@@ -1,0 +1,66 @@
+:root{
+    --phpc-blue: #7AA6FC;
+}
+
+html, body{
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: 40px;
+    background-color: #4382ff;
+}
+.home-page-div{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--phpc-blue);
+}
+
+.home-title{
+    position: absolute;
+    top: 40%;
+    width: 60%;
+    padding-inline: 24px;
+}
+
+.btn-primary {
+    background-color: #E0E0E0 !important;
+    color: black !important;
+    width: 40% !important;
+    border-radius: 40px !important;
+}
+
+.btn-container{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    bottom: 20%;
+    right: 5%;
+}
+
+.custom-shape-divider-top-1676639461 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1676639461 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 390px;
+}
+
+.custom-shape-divider-top-1676639461 .shape-fill {
+    fill: #7AA6FC;
+}
