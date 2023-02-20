@@ -4,7 +4,8 @@
 
 html, body{
     margin: 0;
-    /* overflow-x: hidden; */
+    padding: 0;
+    overflow-x: hidden;
 }
 .logo{
     position: absolute;
@@ -45,6 +46,21 @@ html, body{
     right: 5%;
 }
 
+.donate-header{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.donate-top-div{
+    background: #7AA6FC;
+    height: 25vh;
+    width: 100vw;
+    position: relative;
+}
+
 .custom-shape-divider-top-1676639461 {
     position: absolute;
     top: 0;
@@ -63,4 +79,22 @@ html, body{
 
 .custom-shape-divider-top-1676639461 .shape-fill {
     fill: #7AA6FC;
+}
+
+.donate-option-container{
+    height: 30vh;
+    text-align: center;
+}
+
+.donate-page-btn{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+.about-page-div{
+    height: 100vh;
+    background-color: var(--phpc-blue);
 }
