@@ -1,13 +1,14 @@
-:root{
+:root {
     --phpc-blue: #7AA6FC;
 }
 
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -15,14 +16,39 @@ html, body{
     height: 40px;
     background-color: #4382ff;
 }
-.home-page-div{
+
+#home {
     position: relative;
-    width: 70%;
     height: 100vh;
-    background-color: var(--phpc-blue);
+    overflow: hidden;
 }
 
-.home-title{
+.home-page-div {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    padding-left: 50px;
+    background-color: var(--phpc-blue);
+    clip-path: inset(0 20% 0 0);
+}
+
+.home-page-div h1 {
+    padding: 0 !important;
+    font-size: 4em !important;
+}
+
+.circle {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 80%;
+    height: 120vh;
+    z-index: -1;
+    background-color: var(--phpc-blue);
+    clip-path: ellipse(20% 50% at 80% 48%);
+}
+
+.home-title {
     position: absolute;
     top: 40%;
     width: 60%;
@@ -33,20 +59,17 @@ html, body{
     background-color: white !important;
     color: black !important;
     width: 40% !important;
-    border-radius: 40px !important;
+    border-radius: 30px !important;
 }
 
-.btn-container{
-    position: absolute;
+.btn-container {
+    position: relative;
     width: 30%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    bottom: 20%;
-    right: 5%;
+    height: 100vh;
+    margin-left: -10%;
 }
 
-.donate-header{
+.donate-header {
     position: absolute;
     width: 100vw;
     bottom: 0;
@@ -54,7 +77,7 @@ html, body{
     color: white;
 }
 
-.donate-top-div{
+.donate-top-div {
     background: #7AA6FC;
     height: 25vh;
     width: 100vw;
@@ -81,12 +104,12 @@ html, body{
     fill: #7AA6FC;
 }
 
-.donate-option-container{
+.donate-option-container {
     height: 30vh;
     text-align: center;
 }
 
-.donate-page-btn{
+.donate-page-btn {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -94,7 +117,25 @@ html, body{
     padding: 2px;
 }
 
-.about-page-div{
+.about-page-div {
     height: 100vh;
     background-color: var(--phpc-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .home-page-div {
+        padding-left: 10px !important;
+    }
+
+    .home-page-div h1 {
+        font-size:2em !important;
+    }
+
+    .btn-container {
+        margin-left: -15%;
+    }
+
+    .btn-container .btn-primary {
+        width: 100% !important;
+    }
 }
