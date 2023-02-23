@@ -110,11 +110,24 @@ html, body {
 }
 
 .donate-page-btn {
+    
     background-color: white;
     color: black;
     text-decoration: none;
     border-radius: 40px;
     padding: 2px;
+}
+
+.header-p{
+    color: white; 
+    text-align: center; 
+    width: 30%;
+}
+
+.header-h{
+    color: white; 
+    text-align: center; 
+    width: 30%;
 }
 
 .about-page-div {
@@ -131,11 +144,36 @@ html, body {
         font-size:2em !important;
     }
 
+    .about-page-div {
+        height: 30vh;
+    }
+
     .btn-container {
         margin-left: -15%;
     }
 
     .btn-container .btn-primary {
         width: 100% !important;
+    }
+
+    /* .donate-page-btn {
+        position: absolute;
+        right: 0%;
+        top: 22%;
+        height: 60px;
+    } */
+
+    .header-p{
+        position: fixed;
+        width: 100%;
+        top: 15%;
+        left: 0;
+    }
+
+    .header-h{
+        position: fixed;
+        width: 100%;
+        top: 10%;
+        left: 0;
     }
 }
