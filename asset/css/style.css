@@ -1,5 +1,5 @@
 :root {
-    --phpc-blue: #7AA6FC;
+    --phpc-main-color: #faddd5;
 }
 
 html, body {
@@ -11,10 +11,14 @@ html, body {
 .logo {
     position: absolute;
     top: 30px;
-    left: 30px;
-    width: 80px;
+    width: 100%;
     height: 40px;
-    background-color: #4382ff;
+    text-align: center;
+}
+
+.logo img{
+    width: 180px;
+    height: 80px;
 }
 
 #home {
@@ -28,7 +32,7 @@ html, body {
     width: 80%;
     height: 100vh;
     padding-left: 50px;
-    background-color: var(--phpc-blue);
+    background-color: var(--phpc-main-color);
     clip-path: inset(0 20% 0 0);
 }
 
@@ -44,7 +48,7 @@ html, body {
     width: 80%;
     height: 120vh;
     z-index: -1;
-    background-color: var(--phpc-blue);
+    background-color: var(--phpc-main-color);
     clip-path: ellipse(20% 50% at 80% 48%);
 }
 
@@ -78,7 +82,7 @@ html, body {
 }
 
 .donate-top-div {
-    background: #7AA6FC;
+    background: var(--phpc-main-color);
     height: 25vh;
     width: 100vw;
     position: relative;
@@ -101,7 +105,7 @@ html, body {
 }
 
 .custom-shape-divider-top-1676639461 .shape-fill {
-    fill: #7AA6FC;
+    fill: var(--phpc-main-color);
 }
 
 .donate-option-container {
@@ -132,7 +136,7 @@ html, body {
 
 .about-page-div {
     height: 100vh;
-    background-color: var(--phpc-blue);
+    background-color: var(--phpc-main-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -175,5 +179,17 @@ html, body {
         width: 100%;
         top: 10%;
         left: 0;
+    }
+
+    .logo img{
+        width: 150px;
+        height: 50px;
+    }
+
+    .logo{
+        position: relative; 
+        width: 100%; 
+        height: 40px; 
+        left: 30%; 
     }
 }
