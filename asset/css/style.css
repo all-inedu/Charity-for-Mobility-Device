@@ -109,7 +109,7 @@ html, body {
 }
 
 .donate-option-container {
-    height: 30vh;
+    min-height: 42vh;
     text-align: center;
 }
 
@@ -126,6 +126,7 @@ html, body {
     color: white; 
     text-align: center; 
     width: 30%;
+    font-size: 17px;
 }
 
 .header-h{
@@ -137,6 +138,11 @@ html, body {
 .about-page-div {
     height: 100vh;
     background-color: var(--phpc-main-color);
+}
+
+.text-id{
+    color:#a7a9a9;
+    font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
