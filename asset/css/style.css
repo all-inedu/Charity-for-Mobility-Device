@@ -76,14 +76,14 @@ html, body {
 .donate-header {
     position: absolute;
     width: 100vw;
-    bottom: 0;
+    bottom: -15vh;
     text-align: center;
     color: white;
 }
 
 .donate-top-div {
     background: var(--phpc-main-color);
-    height: 25vh;
+    height: 15vh;
     width: 100vw;
     position: relative;
 }
