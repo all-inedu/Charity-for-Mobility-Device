@@ -8,12 +8,20 @@ html, body {
     overflow-x: hidden;
 }
 
+.text-main {
+    color: #603934 !important;
+}
+
+.text-submain {
+    color: #727272 !important;
+}
+
 .logo {
-    position: absolute;
-    top: 30px;
+    /* position: absolute;
+    top: 30px; */
     width: 100%;
     height: 40px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .logo img{
@@ -24,16 +32,24 @@ html, body {
 #home {
     position: relative;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 
 .home-page-div {
-    position: relative;
-    width: 80%;
+    /* position: relative;
+    width: 100%;
     height: 100vh;
-    padding-left: 50px;
+    padding-left: 50px; */
     background-color: var(--phpc-main-color);
-    clip-path: inset(0 20% 0 0);
+    /* clip-path: inset(0 20% 0 0); */
+}
+
+.slide-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .home-page-div h1 {
@@ -43,10 +59,10 @@ html, body {
 
 .circle {
     position: absolute;
-    top: -5%;
-    left: -5%;
+    top: -13%;
+    left:2%;
     width: 80%;
-    height: 120vh;
+    height: 130vh;
     z-index: -1;
     background-color: var(--phpc-main-color);
     clip-path: ellipse(20% 50% at 80% 48%);
@@ -61,9 +77,15 @@ html, body {
 
 .btn-primary {
     background-color: white !important;
-    color: black !important;
     width: 40% !important;
+    border: 1px solid #603934 !important;
     border-radius: 30px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #603934 !important;
+    color: white !important;
 }
 
 .btn-container {
@@ -73,13 +95,13 @@ html, body {
     margin-left: -10%;
 }
 
-.donate-header {
+/* .donate-header {
     position: absolute;
     width: 100vw;
     bottom: -15vh;
     text-align: center;
     color: white;
-}
+} */
 
 .donate-top-div {
     background: var(--phpc-main-color);
@@ -109,12 +131,11 @@ html, body {
 }
 
 .donate-option-container {
-    min-height: 42vh;
+    /* min-height: 42vh; */
     text-align: center;
 }
 
 .donate-page-btn {
-    
     background-color: white;
     color: black;
     text-decoration: none;
@@ -137,7 +158,10 @@ html, body {
 
 .about-page-div {
     height: 100vh;
-    background-color: var(--phpc-main-color);
+    /* background-color: var(--phpc-main-color); */
+    background-image: url('../img/bg-about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-id{
@@ -145,9 +169,30 @@ html, body {
     font-style: italic;
 }
 
+#donate {
+    /* height: 100vh; */
+}
+
+.banner-donate {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/donate-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 600px) {
+    #donate {
+        height: auto;
+        padding:20px 0;
+    }
+
+    .banner-donate {
+        height: 150px;
+    }
+
     .home-page-div {
-        padding-left: 10px !important;
+        /* padding-left: 10px !important; */
     }
 
     .home-page-div h1 {
@@ -155,7 +200,8 @@ html, body {
     }
 
     .about-page-div {
-        height: 30vh;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     .btn-container {
@@ -193,9 +239,9 @@ html, body {
     }
 
     .logo{
-        position: relative; 
+        /* position: relative;  */
         width: 100%; 
         height: 40px; 
-        left: 30%; 
+        /* left: 30%;  */
     }
 }

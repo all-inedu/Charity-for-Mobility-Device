@@ -7,42 +7,305 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="d-flex" id="home">
-        <div class="home-page-div">
-                <div class="logo" style="left: 0; width: 22%;"><img src="./asset/img/PHCP.webp"/></div>
-                <!-- <div class="d-flex flex-column align-items-start">
-                    <div class="h-100 mt-5">
-
-                        <h1 class="text-white p-2">Charity for <br> Mobility Device</h1>
-                        <p class="p-2">Amal untuk perangkat mobilitas</p>
-                        <br>
+    <section id="home">
+        <div class="container-fluid h-100 w-100 p-0">
+            <div class="row h-100 w-100 p-0 m-0">
+                <div class="col-md-9 p-md-5 pb-md-0 p-0 pb-4 home-page-div">
+                    <div class="logo mt-md-0 mt-3 text-md-start text-center"><img src="./asset/img/PHCP.webp" /></div>
+                    <div class="d-flex align-items-center h-100 w-100" style="margin-top: -5%;">
+                        <div class="container p-0 m-0">
+                            <div class="row align-items-center w-100 m-0">
+                                <div class="col-md-6 text-md-start text-center">
+                                    <h1 class="text-main">Charity for <br> Mobility Device</h1>
+                                    <p class="text-submain text-id" style="font-size: 18px;">Amal untuk alat bantu
+                                        mobilitas
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <section class="splide">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <div class="slide-img">
+                                                        <img src="asset/img/difabel-stick-2.jpg" alt="" class="w-100">
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="slide-img">
+                                                        <img src="asset/img/wheel-chair-1.jpg" alt="" class="w-100">
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="slide-img">
+                                                        <img src="asset/img/difabel-stick.jpg" alt="" class="w-100">
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <div class="slide-img">
+                                                        <img src="asset/img/wheel-chair-2.jpg" alt="" class="w-100">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div> -->
-                <div class="container d-flex h-100">
-                    <div class="row justify-content-center align-self-center">
-                        <h1 class="text-white">Charity for <br> Mobility Device</h1>
-                        <p class="text-white text-id" style="font-size: 18px;">Amal untuk alat bantu mobilitas</p>
+                    <div class="circle d-md-block d-none"></div>
+                </div>
+                <div class="col-md-3 p-md-5 p-2">
+                    <div class="d-flex w-100 h-100 align-items-center justify-content-end">
+                        <div class="row row-cols-md-1  row-cols-2 justify-content-center g-2">
+                            <div class="col">
+                                <a class="btn btn-primary text-main btn-lg shadow pt-1 pb-2 mb-md-3 mb-1 bg-body-tertiary w-100"
+                                    href="#about-us">
+                                    <i class="bi bi-file-earmark-person me-2"></i>
+                                    About Us
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="btn btn-primary text-main btn-lg shadow pt-1 pb-2 px-1 mb-md-3 mb-1 bg-body-tertiary w-100"
+                                    href="#donate">
+                                    <i class="bi bi-send me-2"></i>
+                                    Donate
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="btn btn-primary text-main btn-lg shadow pt-1 pb-2 px-1 mb-md-3 mb-1 bg-body-tertiary w-100"
+                                    href="page/receiving-mobility-device.html">
+                                    <i class="bi bi-receipt me-2"></i>
+                                    Receive
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </div>
-        <div class="circle">test</div>
-        <div class="btn-container d-flex align-items-center">
-            <div class="w-100">
-                <a class="btn btn-primary btn-lg shadow py-2 px-1 mb-3 bg-body-tertiary d-block"
-                    href="page/about.html">About Us</a>
-                <a class="btn btn-primary btn-lg shadow py-2 px-1 mb-3 bg-body-tertiary d-block"
-                    href="page/donate.html">Donate</a>
-                <a class="btn btn-primary btn-lg shadow py-2 px-1 mb-3 bg-body-tertiary d-block"
-                    href="page/receiving-mobility-device.html">Receive</a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="about-us">
+        <div class="row p-0 m-0 align-items-center">
+            <div class="col-sm-4 p-0 m-0">
+                <div class="about-page-div p-md-5 p-2">
+                    <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                        <div class="text-center">
+                            <div class="mb-md-3 mb-1">
+                                <h3 class="mb-0 pb-0">GALLERY</h3>
+                                <hr class="mx-auto mt-1"
+                                    style="border-bottom: 2px solid #415FAB; font-weight: 700; width: 70px;">
+                                <section class="splide mb-3" id="gallery">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="slide-img">
+                                                    <img src="asset/img/gallery-1.jpg" alt="" class="w-100">
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="slide-img">
+                                                    <img src="asset/img/gallery-2.jpg" alt="" class="w-100">
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="slide-img">
+                                                    <img src="asset/img/gallery-3.jpg" alt="" class="w-100">
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="slide-img">
+                                                    <img src="asset/img/gallery-4.jpg" alt="" class="w-100">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="p-md-5 p-3" style="line-height: 1.6;">
+                    <h3 style="border-bottom: 2px solid #415FAB; width: 150px; font-weight: 700;">ABOUT US</h3>
+                    <p>The Physically Handicapped People's Charity, or PHPC, is an organisation that collects donations
+                        in
+                        the form of mobile devices, such as crutches and wheelchairs, from the general public and
+                        donateseach device to people in need who apply and order a device from our website.</p>
+                    <hr>
+                    <p class="text-id">
+                        The Physically Handicapped People's Charity, atau PHPC, adalah organisasi yang mengumpulkan
+                        sumbangan dalam bentuk alat
+                        bantu mobilitas, seperti kruk dan kursi roda, dari masyarakat umum dan mendonasikan setiap alat
+                        bantu kepada orang-orang
+                        yang membutuhkan yang mengajukan permohonan dan memesan alat bantu melalui situs web kami.
+                    </p>
+                    <br>
+                    <h3 style="border-bottom: 2px solid #415FAB; width: 200px; font-weight: 700;">WHAT WE DO</h3>
+                    <p>The PHPC aims to provide mobility devices such as wheelchairs, crutches, and the like by raising
+                        funds and purchasing working used or new devices such as functioning but unused crutches. These
+                        devices can be donated to our organsation through a website, and the PHPC can distribute these
+                        to
+                        people who are in need of these devices but are unable to obtain them.</p>
+                    <hr>
+                    <p class="text-id p-0 m-0">
+                        PHPC bertujuan untuk menyediakan alat bantu mobilitas seperti kursi roda, kruk, dan sejenisnya
+                        dengan mengumpulkan dana
+                        dan membeli alat bantu bekas yang masih berfungsi atau baru seperti kruk yang tidak pernah
+                        digunakan. Alat-alat ini
+                        dapat didonasikan ke organisasi kami melalui situs web, dan PHPC dapat mendistribusikannya
+                        kepada
+                        orang-orang yang
+                        membutuhkan namun tidak dapat memperolehnya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate">
+        <div class="container-fluid h-100 w-100 p-0 m-0">
+            <div class="row h-100 w-100 p-0 m-0">
+                <div class="col-12 p-0 m-0">
+                    <div class="banner-donate"></div>
+                </div>
+                <div class="col-md-9 h-100 bg-light p-0 m-0 h-75 pb-md-5 pb-2">
+                    <div class="d-flex align-items-center">
+                        <div class="p-md-5 p-3">
+                            <div class="row row-cols-md-3 row-cols-1 g-4 mb-md-0 mb-4 align-items-stretch">
+                                <div class="col mb-3">
+                                    <div class="donate-option-container shadow p-3 mb-2 bg-body rounded-3 w-100 h-md-100 h-auto">
+                                        <div class="card-body">
+                                            <i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i>
+                                            <h5 class="card-title mb-2">Donate Money</h5>
+                                            <p class="text-id">Donasi Uang</p>
+                                            <p class="card-text mb-2">All the money collected through donations will be
+                                                used to
+                                                purchase or repair mobility devices.</p>
+                                            <p class="card-text text-id">Seluruh uang yang terkumpul melalui sumbangan
+                                                akan
+                                                digunakan untuk membeli atau memperbaiki alat bantu mobilitas.</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-md-4 mt-3">
+                                        <a href="page/donate-money.html"
+                                            class="donate-page-btn mt-3 shadow px-4 py-2 mb-2">Donate Now <i
+                                                class="fa-sharp fa-solid fa-paper-plane"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="donate-option-container shadow p-3 mb-2 bg-body rounded-3 w-100 h-md-100 h-auto">
+                                        <div class="card-body">
+                                            <i class="fa-sharp fa-solid fa-wheelchair"></i>
+                                            <h5 class="card-title mb-2">Donate Mobility Device</h5>
+                                            <p class="text-id">Donasi Alat Bantu Mobilitas</p>
+                                            <p class="card-text mb-2">All mobility devices donated will go to those who
+                                                are in
+                                                need of them.</p>
+                                            <p class="card-text text-id">Semua alat bantu mobilitas yang didonasikan
+                                                akan
+                                                diberikan kepada mereka yang membutuhkannya.</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center mt-md-4 mt-3">
+                                        <a href="page/donate-mobility-device.html"
+                                            class="donate-page-btn mt-3 shadow px-4 py-2 mb-2 bg-body">Donate Now <i
+                                                class="fa-sharp fa-solid fa-paper-plane"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="donate-option-container shadow p-3 mb-2 bg-body rounded-3 w-100 h-md-100 h-auto">
+                                        <div class="card-body">
+                                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                            <h5 class="card-title mb-2">Purchase Goods</h5>
+                                            <p class="text-id">Membeli Barang</p>
+                                            <p class="card-text mb-2">Part of what we earn from merchandise will be used
+                                                to
+                                                purchase or repair mobility devices.</p>
+                                            <p class="card-text text-id">Sebagian dari pendapatan kami dari penjualan
+                                                barang
+                                                akan digunakan untuk membeli atau memperbaiki alat bantu mobilitas.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center mt-md-4 mt-3">
+                                        <a href="#"
+                                            class="donate-page-btn mt-3 shadow px-4 py-2 mb-5 bg-body">Donate Now <i
+                                                class="fa-sharp fa-solid fa-paper-plane"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 px-4 mt-md-5 mt-0">
+                    <div class="text-center">
+                        <h1>Donate</h1>
+                        <hr class="mx-auto mt-1"
+                            style="border-bottom: 2px solid #415FAB; font-weight: 700; width: 70px;">
+                        <h5 class="text-secondary">Donate your money via:</h5>
+                        <div class="row row-cols-2 mt-2 g-4 justify-content-center">
+                            <div class="col text-center">
+                                <img src="asset//img/bca.png" alt="" class="w-100 px-4">
+                                <h6 class="text-muted mt-3 mb-0">[Account Name]</h6>
+                                <h6 class="text-muted ">[Account Number]</h6>
+                            </div>
+                            <div class="col text-center">
+                                <img src="asset//img/ovo.png" alt="" class="w-100 px-4">
+                                <h6 class="text-muted mt-3 mb-0">[Account Name]</h6>
+                                <h6 class="text-muted ">[Account Number]</h6>
+                            </div>
+                            <div class="col text-center">
+                                <img src="asset//img/gopay.png" alt="" class="w-100 px-4">
+                                <h6 class="text-muted mt-3 mb-0">[Account Name]</h6>
+                                <h6 class="text-muted ">[Account Number]</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+    integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+            interval: 4000,
+            padding: { left: '2rem', right: '2rem' },
+            gap: 15,
+        });
+        splide.mount();
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var gallery = new Splide('#gallery', {
+            type: 'loop',
+            autoplay: true,
+            interval: 4000,
+            gap: 15,
+        });
+        gallery.mount();
+    });
+</script>
 
 </html>
