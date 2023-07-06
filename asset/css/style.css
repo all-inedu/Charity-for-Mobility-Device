@@ -41,13 +41,17 @@ html, body {
     width: 100%;
     height: 100vh;
     padding-left: 50px; */
-    background-color: var(--phpc-main-color);
+    /* background-color: var(--phpc-main-color); */
+    background-image: url('../img/home-bg.jpg');
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: top left;
     /* clip-path: inset(0 20% 0 0); */
 }
 
 .slide-img img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -64,7 +68,10 @@ html, body {
     width: 80%;
     height: 130vh;
     z-index: -1;
-    background-color: var(--phpc-main-color);
+    background-image: url('../img/home-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
     clip-path: ellipse(20% 50% at 80% 48%);
 }
 
@@ -182,6 +189,11 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
+    #home {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
     #donate {
         height: auto;
         padding:20px 0;
@@ -192,6 +204,8 @@ html, body {
     }
 
     .home-page-div {
+        background-image: none;
+        background-color:var(--phpc-main-color) ;
         /* padding-left: 10px !important; */
     }
 
