@@ -195,6 +195,20 @@ html, body {
     height: 60%;
 }
 
+.recipients img {
+    height: 170px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 20px;
+}
+
+.recipients p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 1;
+}
+
 @media only screen and (max-width: 600px) {
     #home {
         height: auto;
